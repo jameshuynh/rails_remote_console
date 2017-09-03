@@ -1,8 +1,6 @@
 # RailsRemoteConsole
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rails_remote_console`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Rails Remote Console can help you enter Rails console from the remote server easily. This gem is currently support rbenv combined with Capistrano (2, 3) and Mina
 
 ## Installation
 
@@ -22,7 +20,43 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Rails 5 and above
+
+Simply trigger the following command to enter the remote rails console
+
+```bash
+[bundle exec] rails rc
+```
+
+The default environment is staging. If you want to have remote console to a specific environment:
+
+```bash
+[bundle exec] rails rc <environment>
+```
+
+For instance:
+
+```bash
+[bundle exec] rails rc production
+```
+
+### Rails 4 and above
+
+```bash
+[bundle exec] rake rc
+```
+
+The default environment is staging. If you want to have remote console to a specific environment:
+
+```bash
+[bundle exec] rake rc <environment>
+```
+
+For instance:
+
+```bash
+[bundle exec] rake rc production
+```
 
 ## Development
 
