@@ -40,7 +40,7 @@ For instance:
 [bundle exec] rails rc production
 ```
 
-### Rails 4 and above
+### Rails 4 and below
 
 ```bash
 [bundle exec] rake rc
